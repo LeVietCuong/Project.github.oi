@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en" class="no-transition">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Fonts, Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!--------link boottrapcdn ----------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <!-- CSS Của thư viện bên ngoài -->
+
+    <!-- CSS Của mình viết -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- <style>
+        #test {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            min-height: 2000px;
+            background-image: url('./images/01-home-anhtrang.jpg');
+            background-repeat: no-repeat;
+            background-position: center 0;
+            opacity: 0.6;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0"></script>
+    <!-- <div id="test"></div> -->
+    <header id="header">
+        <div class="container">
+            <p class="top-header">Inox Anh Trang - Cung cấp và phân phối tủ cơm công nghiệp, bếp công nghiệp, bếp nhà
+                hàng
+                chính hãng, chất lượng cao, giá tốt, giao hàng tận nơi, bảo hành lâu dài</p>
+            <div class="main-header">
+                <div class="row va-m">
+                    <div class="cv-col-9">
+                        <div class="main-header__left layout-ib">
+                            <div class="logo">
+                                <img class="d-block" src="images/logo.png" alt="">
+                            </div>
+                            <div class="contact layout-ib text-r">
+                                <img src="images/icon-phone.jpg" alt="">
+                                <p>Hà nội: <span>098.440.6789</span>  -  TP.HCM: <span>094.481.6789</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-col-3">
+                        <form class="input-search">
+                            <div class="form-control">
+                                <input type="" name="" placeholder="Nhập nội dung tìm kiếm ...">
+                                <button type="submit" class="icons ion-android-search"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="menu">
+        <div class="container">
+            <ul class="menu">
+               <li class="active"><a href="">tủ nấu cơm</a></li>
+               <li>
+                    <a href="">tủ nấu cơm ga</a>
+                    <ul class="sub-menu">
+                        <li><a href="">tủ nấu cơm ga 2</a></li>
+                        <li>
+                            <a href="">tủ nấu cơm ga 2</a>
+                            <ul class="sub-menu">
+                                <li><a href="">tủ nấu cơm gà 3</a></li>
+                                <li><a href="">tủ nấu cơm gà 3</a></li>
+                                <li><a href="">tủ nấu cơm gà 3</a></li>
+                                <li><a href="">tủ nấu cơm gà 3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">tủ nấu cơm ga 2</a></li>
+                        <li><a href="">tủ nấu cơm gà 2</a></li>
+                    </ul>
+                </li>
+               <li><a href="">tủ nấu cơm điện</a></li>
+               <li><a href="">tủ nấu cơm</a></li>
+               <li><a href="">linh kiện tủ nấu cơm</a></li>
+               <li><a href="">liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main id="main">
+        <div class="container">
+            <div class="row">
+                <div class="cv-col-9">
+                    <div class="main-content">
+                        <!---- slider ----->
+                        <div class="slider">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="images/tu-nau-com-moi-s2.png" alt="...">
+                                        <div class="carousel-caption">
+                                            ...
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/tu-com-cong-nghiep-12-khay-300x300.jpg" alt="...">
+                                        <div class="carousel-caption">
+                                            ...
+                                        </div>
+                                    </div>
+                                    ...
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main-text">
+                            <p class="main-text-title">chào mừng bạn  truy cập website tủ nấu cơm</p>
+                            <p>Tủ nấu cơm hay tủ cơm công nghiệp là thiết bị chuyên dụng dùng để nấu hàng trăm hàng nghìn xuất cơm trong thời gian ~ 40 phút.</p>
+                            <p>Ngoài tính năng nấu cơm, tủ còn dùng để hấp thức ăn như hải sản, thịt, gà, cá và nhiều món bánh... Với ưu điểm vượt trội TNC đã dần thay thế nồi cơm công nghiệp, trở thành thiết bị không thể thiếu trong các bếp nhà hàng, khách sạn, nhà máy, trường học...</p>
+                            <p>Là doanh nghiệp tiên phong trong lĩnh vực sản xuất tủ nấu cơm tại Việt Nam chúng tôi luôn ý thức về chất lượng sản phẩm cũng như chính sách chăm sóc sau bán hàng. Chính nhờ sự chu đáo cẩn thận đến từng chi tiết chúng tôi đã có nhiều doanh nghiệp Nhật Bản và Hàn Quốc đặt hàng.</p>
+                            <p>Để tri ân khách hàng <span>Inox Anh Trang</span> thực hiện chương trình khuyến mại đặc biệt mang tên</p>
+                            <p class="fishsoup">"Mùa hè Xanh".</p>
+                            <p class="wishes">Kính tặng Quý khách 1 - 2 triệu đồng khi mua tủ nấu cơm.</p>
+                        </div>
+                        <!--main title---->
+                        <div class="main-product">
+                            <div class="main-title">
+                                <p>Tủ nấu cơm ga</p>
+                            </div>
+                            <div class="list-products row">
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-product">
+                            <div class="main-title">
+                                <p>Tủ nấu cơm điện</p>
+                            </div>
+                            <div class="list-products row">
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-product">
+                            <div class="main-title">
+                                <p>Tủ nấu cơm ga + điện</p>
+                            </div>
+                            <div class="list-products row">
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-product">
+                            <div class="main-title">
+                                <p>linh kiện tủ nấu cơm</p>
+                            </div>
+                            <div class="list-products row">
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-01.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-02.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-03.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div class="cv-col-3">
+                                    <div class="product">
+                                        <div class="product-image">
+                                            <a href="#">
+                                                <img src="images/product/product-04.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <h1 class="product-title">
+                                            <a href="#">Tủ cơm công nghiệp 12 khay gas AnhTrang</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="facebook">
+                        <div class="fb-page" data-href="https://www.facebook.com/hamtech.vn/" data-tabs="" data-width="333" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/hamtech.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hamtech.vn/">HamTech-VIT</a></blockquote></div>
+                    </div>
+                    <div class="fb-comments" data-href="https://www.facebook.com/hamtech.vn/?__xts__[0]=68.ARBaOoxc-LKQtd1A5wYzdiuz4oO9lOzRhe5Ize_b28G79xOOTZ181iB9JjYy8rAEJzDmCPGMhtE9HbhkcJA8BLSIbWqEeayGf8m5mQgjqvDnwBKg065OK6PsPLJ8ZUHyHx8Mxcwq2patxt1mAfCBwn7Txm99DponVMb3NNgplfQ_i-UvHujrNnvDcXAdm-nmHpCc4Faoz3w0-FYgOf4XTWXfbGy5ePPdwwzCfl8pK8-QJzIWAdvi1TiU8j3ppFoJ0cX5N-aVuoPSVuJUtYzC9voM3Kl2j0c0nWJiXbFdBy4epV8ceuYz8WitmhjXwIuB3KT3XpnHA0jDxC3s-eOws5uuAF1a&amp;__xts__[1]=68.ARBvhym2cBBwnVOjMX8JP-Xodq81CH7FkTSbXo2_w2-crrKtuNFZ5K0ec6NVmSwlQ9lHSbzGqrEfz4BL0VTYpJAhwjdDyK2Mwp6SSkAbhd8omtxnX3eeg9IPE8lZaHtoiU3-Y8KVD7yMRgdCYyd-A3iT4XKeEbA4NmghsEt3KjSYCADejcxGZ0n2oAkbrUZaT17L-zNBl7AjmsL8nKPtD1yT_Wg0IByMwr8Ve2_wDM9O0FeRvdPGSkFrl2Zj3k6JdX0wtZZ72VOIu-YQChyfH_8f_oM3zzCgN_38h1sWMg_dS7IZDD7-z9BxmbF6ZYipRm-qfdXDm0w3QE3s9igK7tyVB1wX&amp;__tn__=kC-R&amp;eid=ARBRS5CgaDu39aW0rHvq2_DLESrATVCCrlToxzfRNwpEPYX6K7URA2u0qmv9xtRi392tN_p2g7Nsje6J&amp;hc_ref=ARR30IkwCJcWCAPnfwIfy_3r-mTfzSDAydUY45-29I7GJz3Ms566cdo19EDWbaPjb-M" data-width="100%" data-numposts="5"></div>
+                    </div>
+                </div>
+                <div class="cv-col-3">
+                    <aside class="side-bar">
+                        <div class="widgets">
+                            
+                        </div>
+                        <div class="widgets">
+                            
+                        </div>
+                        <div class="widgets">
+                            
+                        </div>
+                        <div class="widgets">
+                            
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="cv-col-3">
+                        <div class="widgets">
+                            <p class="widget-title">Doanh nghiệp</p>
+                            <div class="widget-content">
+                                <p>Anhtrang Production and investment trading joint stock company</p>
+                                <p>Mã số doanh nghiệp: 0107094755<br>
+                                    Giấy phép ĐKKD số: 0107094755</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-col-3">
+                        <div class="widgets">
+                            <p class="widget-title">Thiết bị điện lạnh</p>
+                            <div class="widget-content">
+                                <ul class="dot">
+                                    <li><a href="#">Tủ đông công nghiệp</a></li>
+                                    <li><a href="#">Tủ đông công nghiệp</a></li>
+                                    <li><a href="#">Tủ đông công nghiệp</a></li>
+                                    <li><a href="#">Tủ đông công nghiệp</a></li>
+                                    <li><a href="#">Tủ đông công nghiệp</a></li>
+                                    <li><a href="#">Tủ đông công nghiệp</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-col-3">
+                        <div class="widgets">
+                            <p class="widget-title">Văn phòng</p>
+                            <div class="widget-content">
+                                <ul>
+                                    <li>
+                                        <i class="icons ion-location"></i>
+                                        <a href="#">Số 5, Ngõ 53, Đường Phú Diễn, Bắc Từ Liêm, Hà Nội</a>
+                                    </li>
+                                    <li>
+                                        <i class="icons ion-ios-telephone"></i>
+                                        <a href="#">Hotline: 0962 150 326</a>
+                                    </li>
+                                    <li>
+                                        <i class="icons ion-email"></i>
+                                        <a href="#">Email: anhtrang@inoxanhtrang.vn</a>
+                                    </li>
+                                    <li>
+                                        <i class="icons ion-android-globe"></i>
+                                        <a href="#">Website: inoxanhtrang.vn</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cv-col-3">
+                        <div class="widgets">
+                            <p class="widget-title">Nhà máy</p>
+                            <div class="widget-content">
+                                <ul>
+                                    <li>
+                                        <i class="icons ion-location"></i>
+                                        <a href="#">Số 330, Đường K2, Phường Cầu Diễn, Nam Từ Liêm, Hà Nội.</a>
+                                    </li>
+                                    <li>
+                                        <i class="icons ion-ios-telephone"></i>
+                                        <a href="#">Tel: (04).6683.5419</a>
+                                    </li>
+                                    <li>
+                                        <i class="icons ion-android-globe"></i>
+                                        <a href="#">Fax: (04).3763.0330</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Copyright 2016 inoxanhtrang.vn - Nhà cung cấp thiết bị bếp công nghiệp hàng đầu tại Việt Nam</p>
+            </div>
+            <div class="hot-line">
+                <i class="ion-ios-telephone"></i>
+                <span>0123 688 3636</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- jQuery -->
+
+<!-- Javascript Của thư viện bên ngoài -->
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+
+<!-- Javascript của mình viết -->
+
+</html>

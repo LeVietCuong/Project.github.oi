@@ -1,0 +1,258 @@
+/* 
+    00. Reset CSS
+    01. General
+    02. Header
+    03. Menu
+    04. Footer
+*/
+
+/* ============= 00. Reset CSS ============= */
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
+    *::before, *::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    span, a, img, *::before, *::after {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    html, body {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.285;
+        font-family: 'Roboto', sans-serif;
+        background-image: url("../images/background.jpg");
+    }
+    .no-transition * {
+        transition: none !important;
+    }
+
+/* ============= 01. General ============= */
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    .fz-0{
+        font-size: 0;
+    }
+    .fz-14{
+        font-size: 14px;
+    }
+    .d-ib{
+        display: inline-block;
+    }
+    .d-block{
+        display: block;
+    }
+    .va-m{
+        vertical-align: middle;
+    }
+    .text-r{
+        text-align: right;
+    }
+    .layout-ib {
+        font-size: 0;
+    }
+    .layout-ib > * {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .layout-ib.va-t > * {
+        vertical-align: top;
+    }
+    .layuot-ib.va-b > * {
+        vertical-align: bottom;
+    }
+     .row{
+        font-size: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /*
+    .cv-col-9{
+        width: 75%;
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        vertical-align: middle;
+    }
+    .cv-col-3{
+        width: 25%;
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        vertical-align: middle;
+    }*/
+    .row > [class*="cv-col-"] {
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        vertical-align: top;
+    }
+    .row.va-m > [class*="cv-col-"]{
+        vertical-align: middle;
+    }
+    .row > .cv-col-9{
+        width: 75%;
+    }
+    .row > .cv-col-3{
+        width: 25%;
+    }
+
+/* ============= 02. Header ============= */
+    .top-header {
+        font-size: 13px;
+        font-weight: 500;
+        color: #0c8597;
+        border-bottom: 1px solid #dbdbdb;
+        text-transform: uppercase;
+        padding-top: 13px;
+        padding-bottom: 10px;
+    }
+    .main-header{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .main-header .logo{
+        width: 130px;
+    }
+    .main-header .contact{
+        text-align: right;
+        width: calc(100% - 130px);
+    }
+    .main-header  p{
+        font-size: 16px;
+    }
+    .main-header  .contact span{
+        color: #f9100b;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .form-control{
+        position: relative;
+    }
+
+    .input-search input {
+        width: 100%;    
+        height: 35px;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-right: 35px;
+        border: 1px solid #dbdbdb;
+    }
+    .input-search .icons{
+        top: 0;
+        right: 0;
+        border: 0;
+        color: #999;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        font-size: 15px;
+        position: absolute;/* lỗi nếu dùng absolute cho thằng con, thì thằng cha phải gán relative*/
+        background-color: transparent;
+    }
+/* ============= 03. Menu ============= */
+.menu{
+    margin-bottom: 15px;
+    background-color: rgb(0,0,0,0.1);
+    border-bottom: 2px solid #cb672e;
+}
+.menu::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.menu > li{
+    float: left;
+}
+.menu li{
+    position: relative;
+}
+.menu li a{
+    font-size: 16px;
+    color: #cb672e;
+    font-weight: 700;
+    display: block;
+    padding: 11px 25px 8px;
+    text-transform: uppercase;/*chữ hoa hết*/
+}
+
+.menu li.active > a,
+.menu li:hover > a{
+    color: #fff;
+    background-color: #cb672e;
+}
+.menu:hover li.active > a{
+    color: #cb672e;
+    background-color: transparent;
+}
+.menu li:hover.active > a{
+    color: #fff;
+    background-color: #cb672e;
+}
+.menu ul {
+    opacity: 0;
+    z-index: 999;
+    width: 200px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.2);
+    pointer-events: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: transform(32px);
+    -ms-transform: transform(32px);
+    -o-transform: transform(32px);
+    transform: translateY(32px);
+}
+
+.menu > li >ul{
+    left: 0;
+    top: 100%;
+}
+
+.menu ul ul{
+    top: 0;
+    left: 100%;
+}
+
+.menu li:hover >ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu >li:hover >ul { /* cấp 2 có hiệu ứng*/
+    -webkit-transform: transform(2px);
+    -ms-transform: transform(2px);
+    -o-transform: transform(2px);
+    transform: translateY(2px);
+}

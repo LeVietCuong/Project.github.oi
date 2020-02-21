@@ -1,0 +1,510 @@
+/* 
+    00. Reset CSS
+    01. General
+    02. Header
+    03. Menu
+    04. Footer
+*/
+
+/* ============= 00. Reset CSS ============= */
+    * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+    }
+    *::before, *::after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    span, a, img, *::before, *::after {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    :focus {
+        outline: none;
+    }
+
+    html, body {
+        color: #555;
+        font-size: 14px;
+        line-height: 1.285;
+        font-family: 'Roboto', sans-serif;
+        background-image: url("../images/background.jpg");
+    }
+    .no-transition * {
+        transition: none !important;
+    }
+
+/* ============= 01. General ============= */
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+    .fz-0{
+        font-size: 0;
+    }
+    .fz-14{
+        font-size: 14px;
+    }
+    .d-ib{
+        display: inline-block;
+    }
+    .d-block{
+        display: block;
+    }
+    .va-m{
+        vertical-align: middle;
+    }
+    .text-r{
+        text-align: right;
+    }
+    .layout-ib {
+        font-size: 0;
+    }
+    .layout-ib > * {
+        font-size: 14px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .layout-ib.va-t > * {
+        vertical-align: top;
+    }
+    .layuot-ib.va-b > * {
+        vertical-align: bottom;
+    }
+     .row{
+        font-size: 0;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    /*
+    .cv-col-9{
+        width: 75%;
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        vertical-align: middle;
+    }
+    .cv-col-3{
+        width: 25%;
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        vertical-align: middle;
+    }*/
+    .row > [class*="cv-col-"] {
+        font-size: 14px;
+        display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        vertical-align: top;
+    }
+    .row.va-m > [class*="cv-col-"]{
+        vertical-align: middle;
+    }
+    .row > .cv-col-9{
+        width: 75%;
+    }
+    .row > .cv-col-3{
+        width: 25%;
+    }
+
+/* ============= 02. Header ============= */
+    .top-header {
+        font-size: 13px;
+        font-weight: 500;
+        color: #0c8597;
+        border-bottom: 1px solid #dbdbdb;
+        text-transform: uppercase;
+        padding-top: 13px;
+        padding-bottom: 10px;
+    }
+    .main-header{
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    .main-header .logo{
+        width: 130px;
+    }
+    .main-header .contact{
+        text-align: right;
+        width: calc(100% - 130px);
+    }
+    .main-header  p{
+        font-size: 16px;
+    }
+    .main-header  .contact span{
+        color: #f9100b;
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .form-control{
+        position: relative;
+    }
+
+    .input-search input {
+        width: 100%;    
+        height: 35px;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-right: 35px;
+        border: 1px solid #dbdbdb;
+    }
+    .input-search .icons{
+        top: 0;
+        right: 0;
+        border: 0;
+        color: #999;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        font-size: 15px;
+        position: absolute;/* lỗi nếu dùng absolute cho thằng con, thì thằng cha phải gán relative*/
+        background-color: transparent;
+    }
+/* ============= 03. Menu ============= */
+.menu{
+    margin-bottom: 15px;
+    background-color: rgb(0,0,0,0.1);
+    border-bottom: 2px solid #cb672e;
+}
+.menu::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+.menu > li{
+    float: left;
+}
+.menu li{
+    position: relative;
+}
+.menu li a{
+    font-size: 16px;
+    color: #cb672e;
+    font-weight: 700;
+    display: block;
+    padding: 11px 25px 8px;
+    text-transform: uppercase;/*chữ hoa hết*/
+}
+
+.menu li.active > a,
+.menu li:hover > a{
+    color: #fff;
+    background-color: #cb672e;
+}
+.menu:hover li.active > a{
+    color: #cb672e;
+    background-color: transparent;
+}
+.menu li:hover.active > a{
+    color: #fff;
+    background-color: #cb672e;
+}
+.menu ul {
+    opacity: 0;
+    z-index: 999;
+    width: 200px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px 0 rgba(0,0,0,0.2);
+    pointer-events: none;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    -webkit-transform: transform(32px);
+    -ms-transform: transform(32px);
+    -o-transform: transform(32px);
+    transform: translateY(32px);
+}
+
+.menu > li >ul{
+    left: 0;
+    top: 100%;
+}
+
+.menu ul ul{
+    top: 0;
+    left: 100%;
+}
+
+.menu li:hover >ul{
+    opacity: 1;
+    pointer-events: auto;
+}
+.menu >li:hover >ul { /* cấp 2 có hiệu ứng*/
+    -webkit-transform: transform(2px);
+    -ms-transform: transform(2px);
+    -o-transform: transform(2px);
+    transform: translateY(2px);
+}
+.menu ul li:hover > ul{/* cấp 3 không có hiệu ứng*/
+    -webkit-transform: transform(0);
+    -ms-transform: transform(0);
+    -o-transform: transform(0);
+    transform: translateY(0);
+}
+
+.menu > li > ul::before {
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+/* ============= 04. MainContent ============= */
+.main-content{
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(158, 158, 158, 0.3);
+    padding: 15px;
+}
+/*=============== 05. slider ======================*/
+.main-content .main-text-title{
+    font-size: 24px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.main-text p{
+    padding: 10px 0;
+}
+.main-text span{
+    color: #cb672e;
+}
+.main-text .fishsoup{
+    text-align: center;
+    font-size: 36px;
+    color: #56a6b2;
+}
+.main-text .wishes{
+    text-align: center;
+    font-size: 24px;
+    color: #f51b1b;
+}
+.main-text{
+    margin-bottom: 50px;
+}
+/*============== 06. List Product ==============*/
+.main-product{
+    margin-bottom: 45px;
+}
+.main-title{
+    background-color: #cb672e;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    position: relative; 
+    padding: 12px 30px 10px;
+    text-transform: uppercase;
+}
+
+.main-title::after {
+    top: 10px;
+    left: 10px;
+    width: 5px;
+    height: 5px;
+    content: '';
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    background-color: #fff;
+}
+
+.main-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+}
+.product .product-title {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+.product .product-title a {
+    font-size: 14px;
+    color: #323232;
+    font-weight: 500;
+}
+.product .product-title a:hover {
+    color: #cb672e;
+}
+.product .product-image{
+    font-size: 0;
+    border: 1px solid #dbdbdb;
+}
+.product .product-image img{
+    font-size: 14px;
+}
+/*.product .product-image a,
+.product .product-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}*/
+.product .product-image::before{
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.product-image{
+    position: relative;
+}
+.product .product-image a, 
+.product .product-image img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.list-products{
+    margin-top: -30px;
+}
+.list-products .product{
+    margin-top: 30px;
+}
+/* ============= 05. Sidebar ============= */
+.side-bar{
+    min-height: 300;
+}
+.widgets{
+    margin-bottom: 15px;
+    min-height: 250px;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(158, 158, 158, 0.3);
+}
+footer{
+    margin-top: 50px;
+    background-color: #fff;
+}
+.main-footer{
+    min-height: 263px;
+    padding-top: 46px;
+}
+.footer-bottom{
+    background-color: #323;
+    min-height: 40px;
+
+}
+/* ============= 07 . Footer ============= */
+footer {
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.main-footer {
+    /* min-height: 250px; */
+    padding-top: 45px;
+}
+.main-footer .row>.tcl-col-3 {
+    margin-bottom: 30px;
+}
+
+.footer-bottom {
+    position: relative;
+    background-color: #323232;
+    padding-top: 12px;
+    padding-bottom: 11px;
+}
+.footer-bottom p {
+    color: #bfbfbf;
+}
+.footer-bottom .hot-line {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    background-color: red;
+    top: 0;
+    bottom: 0;
+    padding: 2px 20px;
+}
+
+footer .widget-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #323232;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+footer .widget-title::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    display: block;
+    margin-top: 2px;
+    background-color: #ededed;
+    /* background-color: blue; */
+}
+footer .widget-content p + p {
+    margin-top: 5px;
+}
+
+footer .widget-content li {
+    font-size: 0;
+}
+footer .widget-content a {
+    color: #555;
+    font-size: 14px;
+    vertical-align: top;
+    width: calc(100% - 13px);
+}
+footer .widget-content li + li {
+    margin-top: 4px;
+}
+footer .widget-content .dot li::before {
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #555;
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+footer .widget-content .dot li:hover a {
+    color: #cb672e;
+}
+footer .widget-content .dot li:hover::before {
+    background-color: #cb672e;
+}
+
+footer .widget-content .icons {
+    width: 20px;
+    font-size: 14px;
+    display: inline-block;
+}
+footer .widget-content .icons + a {
+    width: calc(100% - 20px);
+}
